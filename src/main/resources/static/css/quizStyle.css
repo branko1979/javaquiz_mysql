@@ -1,0 +1,167 @@
+@charset "ISO-8859-1";
+h1{
+	font-style: normal;
+	font-family: fantasy;
+	background-color: #f0f0f6;
+	color: #F2921D;
+	font-size: 30px;
+	text-transform: capitalize;
+	letter-spacing: 4px;
+	word-spacing: 35px;
+}
+
+h2{
+	font-style: italic;
+	font-family: monospace;
+	color: #e7b112;
+	font-size: 20px;
+	text-align: center;
+}
+
+h3{
+	font-style: italic;
+	font-family: cursive;
+	color: #7D8F69;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	word-spacing: 22px;
+}
+
+#container{
+	width: 980px;
+	margin: auto;
+	background-color: #e3f8f1;
+}
+
+
+#input_form{
+	margin: auto;
+	floar: left;
+}
+
+
+
+#input_form label {
+	width: 40%;
+	padding: 4px 6px;
+	float: left;
+	color: #557153;
+	text-transform: uppercase;
+	font-style: oblique;
+	word-spacing: 8px;
+	margin: 3px 0px 0px 0px;
+}
+
+#input_form li{
+	padding: 4px 6px;
+
+	color: #557153;
+	text-transform: uppercase;
+	text-align: left;
+	font-style: oblique;
+	word-spacing: 8px;
+	margin: 3px 0px 0px 0px;
+}
+#input_form input{
+	width: 55%;
+	padding: 4px 8px;
+	height: 30px;
+	color: #557153;
+	font-family: sans-serif;
+	font-style: oblique;
+}
+
+
+#input_form .submit{
+	margin: 30px;
+	border-radius: 14px 8px;
+	padding: 4px 20px ;
+	background-color: #7d8f69;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	height: 30px;
+}
+#input_form .submit:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color:#7d8f69;
+	border-color: fff;
+}
+.form_hint{
+	background: #AC4425;
+	border: 5px 5px 5px 0px;
+	color:white;
+	display:none;
+	margin-left: 15px;
+	padding: 3px 10px;
+	z-index: 99;
+	position: absolute;
+}
+.form_hint:before{
+	content: "\25c0";
+	color: #AC4425;
+	position: absolute;
+	top: 3px;
+	left: -12px;
+}
+#input_form input:focus + .form_hint{
+	display: inline;
+}
+
+a{
+	padding: 2px;
+	 margin: 10px 20px;
+	border: 1px solid #4CAF50;
+	background-color: #74a898;
+}
+a:link{
+	color: #fcd705;
+}
+a:visited{
+	color: yellow;
+}
+a:hover{
+	background-color: #ACCF20;
+}
+table{
+	border: 2px solid #658864;
+	width: 90%;
+	margin: auto;
+}
+th,td{
+	color: #658864; 
+	text-align: center;
+	border: 2px solid #658864;
+	font-style: cursive;
+	font-size:20px;
+	padding: 8px 16px;	
+}
+th{
+	background-color: #EEEEEE;
+}
+td:hover,th:hover{
+	color: white;
+	background-color: #658864; 
+}
+td:active{
+	background-color: #B7B78A;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	#container {
+	width: 95%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+	#input_form input{
+	width: 75%;
+}
+}
